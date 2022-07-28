@@ -19,8 +19,7 @@ namespace StockApp_2
         //
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormLogin _formLogin = new FormLogin();
-            _formLogin.Close();
+           
         }
     }
 }

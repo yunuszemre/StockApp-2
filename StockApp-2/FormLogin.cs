@@ -12,6 +12,7 @@ namespace StockApp_2
 {
     public partial class FormLogin : Form
     {
+
         public FormLogin()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace StockApp_2
             {
                 Form1 form1 = new Form1();
                 this.Hide();
+                form1.UserName = userName;
                 form1.Show();
             }
             else
@@ -44,7 +46,7 @@ namespace StockApp_2
                 MessageBox.Show("Kulllanıcı adı veya şifre hatalı", "Sistem Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        
         private void FormLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyValue == (int)Keys.Enter)
